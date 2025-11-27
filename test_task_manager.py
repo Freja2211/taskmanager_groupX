@@ -1,6 +1,6 @@
 import pytest
-from logic import task_manager
-from persistence import persistence_mock
+import task_manager
+import persistence_mock
 
 @pytest.fixture(autouse=True)
 def reset_data():

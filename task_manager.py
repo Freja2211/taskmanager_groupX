@@ -1,4 +1,4 @@
-from persistence.persistence_sqlite import get_tasks, save_task, update_task, init_storage
+from persistence_sqlite import get_tasks, save_task, update_task, init_storage
 
 def setup_system():
     init_storage()

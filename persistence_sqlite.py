@@ -1,5 +1,5 @@
 import sqlite3
-from model.task import Task
+from task import Task
 
 def get_connection():
     return sqlite3.connect("tasks.db")
