@@ -1,6 +1,9 @@
 import pytest
+from flask import Flask
+
 import task_manager
-import persistence_mock
+import persistence_sqlite as persistence_mock
+app = Flask(__name__)
 
 @pytest.fixture(autouse=True)
 def reset_data():
