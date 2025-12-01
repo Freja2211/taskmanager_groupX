@@ -17,3 +17,9 @@ def add_task():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route("/tasks/<int:id>/done",methods=["put]"])
+def mark_done(id):
+ from task_manager import update_task
+ task = update_task(id,"done")
+ return jsonify(task.__dict__)
